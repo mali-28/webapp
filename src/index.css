@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.main{
+        width : 100vw;
+        height : 100vh;
+        background-color : #fff;
+        display : flex;
+        align-items: center;
+        justify-content : center;
+
+}
+.div-login{
+  width: 350px;
+  height: 500px;
+  background-color: rgb(70, 17, 167);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction : column;
+}

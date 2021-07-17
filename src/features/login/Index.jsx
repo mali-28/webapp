@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Input from '../../component/Input';
+import Button from '../../component/Button';
+import { useAuthContext } from '../../hooks/auth';
 
 const Index = () => {
-    const main = {
-        width : "100vw",
-        height : "100vh",
-        backgroundColor : "#ccc"
-    }
+    const {name, setName} = useContext(useAuthContext)
+    
     return <>
-       <div className={main}>
+       <div className="main">
            <div className="div-login">
-               <div className=''></div>
-               <div className=''></div>
+               <div className='title'><h1>SignUp</h1></div>
+               <div className='login-form'>
+               <Input name='name'/>
+               <Input name="email" type='email'/>
+               <Input name='password' tyoe="password"/>
+               <br/>
+                   <Button title ="Login"/>
+
+
+               </div>
            </div>
        </div>
     </>
